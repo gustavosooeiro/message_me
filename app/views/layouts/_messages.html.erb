@@ -1,0 +1,11 @@
+<% flash.each do |name, msg| %>
+  <div class="ui center <%= name %> message transition">
+    <i class="close icon"></i>
+    <div class="header">
+      <%= msg %>
+    </div>
+    <!--<ul class="list">
+      <%= content_tag :li , msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+    </ul>-->
+  </div>
+<% end %>
